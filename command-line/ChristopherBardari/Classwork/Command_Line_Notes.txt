@@ -1,0 +1,201 @@
+# Command line notes
+
+-_**pwd**_ (Print Working Directory)
+
+  -command for linux terminal
+
+-Prints where you currently are in the file directory (for example: Desktop/Python/...)
+
+-The following strings can be added to the command for certain effects
+
+-"pwd .." : prints the parent directory of the current directory
+    
+
+-_**ls**_
+
+-Linux Terminal Command
+
+-Prints the files and folders in the current directory
+
+-The following strings can be added to the command for certain effects    
+
+	-"-a"  : Show Hidden Files
+
+	-"-l"  : Show large form of files / more information about files (creation date, edit date, file type)
+
+	-"-la" : Combines the effect of both -a and -l
+
+-"ls <File Directory>" can be used to show the files of a specific directory
+
+-_**cd**_ (change directory)
+ 
+ -Linux Terminal Command
+  
+  -Changes the file directory that you are in
+  
+  -"cd .." can be used to return to the parents directory of the current directory
+  
+  	-"cd ../../.." returns to third previous directory (../../ can return to the parent directory of the parent directory of the current directory)
+ 
+ -"cd <name of parent directory>" will not go back to the parent directory, ".." must be used to go to the parent directory
+  
+  -cd can change multiple directories/ can change directory through a directory, for example: "cd directory1/sub_directory1/subdirectory_2"
+ 
+ -"cd" alone will change the current directory to the home directory
+   
+   	-"cd ~" will produce the same result
+
+
+-***mkdir*** (make directory)
+ 
+ -Linux Terminal Command
+ 
+ -Creates a directory within the current directory
+ 
+ -"mkdir <Name of directory you want to create>" 
+ 
+ 	-example: "mkdir Directory_2" = this command will create a directory called "Directory_2" in the current directory
+ 
+ 
+-***man***
+ 
+ -Linux Terminal Command
+
+-"man <name of command>" -> shows you information about a command
+ 
+ 	-hit 'q' to get out of it
+
+
+-***touch***
+ 
+ -Linux Terminal Command
+
+-Creates a file within the current directory
+
+-ex.: "touch test_file.txt" -> creates a text file called "test_file"
+
+
+-***open***
+ 
+ -Linux Terminal Command
+ 
+ -Opens a file within the current directory
+ 
+ -example: "open test_file.txt" -> this will result in a text file called "test_file.txt" in the current directory being opened
+  
+-***cp***
+ 
+ -copies (and pastes) a file or a directory
+
+-"cp test_file.txt copy_file.txt" -> copies a file caled "test_file" and creates a file called "copy_file" with the same contents
+ 
+ -"cp -R TestDir/CopyDir" -> copies and pastes the contents inside the directory "TestDir" into the directory "CopyDir"
+
+-***mv***
+ 
+ -Linux Terminal Command
+ 
+ -used to move and rename files (or both)
+ 
+ -"mv test_file.txt orig_file.txt" -> changes the name of a file called "test_file" to "orig_file"
+ 
+ -"mv orig_file.txt SubDir1" -> moves a file called "orig_file" to a directory called "SubDir1" without renaming it
+ 
+ -"mv orig_file.txt SubDir1/test_file.txt" -> moves a file called "orig_file" to a folder called "SubDir1" and renames it to "test_file"
+ 
+ -"mv TestDir OrigDir" -> renames the directory "TestDir" to "OrigDir"
+ 
+ -"mv OrigDir/CopyDir" -> moves the directory "OrigDir" into a directory called "CopyDir"
+ 
+ -"mv OrigDir/ParentDir/TestDir" ->moves the directory "OrigDir" into the directory "ParentDir" and renames "OrigDir" into "TestDir"
+  
+  
+-***rm***
+  
+  -Linux Terminal Command
+  
+  -deletes files
+  
+  -"rm copy_file.txt" -> deletes a file called "copy_file"
+  
+  -doesn't get sent to trash can // instantly deleted
+  
+  -file must be in the current directory
+  
+  -"rm -R CopyDir" -> deletes the directory "CopyDir"
+  
+  -"rm -rf" forces a deletion
+  
+  
+-***python*** --version = shows python version
+
+
+-***python3*** --version = shows python 3 version
+
+
+-***nano*** ~/.bash_profile
+
+
+-***alias*** <renaming of command>=<command> = rename a command/use a alias for it
+	-ex.; alias python=python3 = this will set the command python3 to be activated when python is typed
+
+
+-***python*** <directory of file>/<name of file you want to run>
+
+
+-***exit()*** = terminate program
+
+***Keyboard Short Cuts***
+
+-Ctrl + a = goes to beginning of the line
+
+-Ctrl + e = goes to end of the line
+
+-Option <-/-> = go left or right
+
+-Option + click = go to point
+
+-Ctrl + u = delete everything in the command before the cursor
+
+-Ctrl + k = delete everything in the command after the cursor
+
+-Tab = autocomplete //this can also be done by dragging and dropping folders or files
+
+-Uparrow = previous commands
+
+-Downarrow = next command (used in tandem with up arrow)
+
+-! “” = finds command previously entered with whatever text that follows it
+	-Example.- “!find” will look for a command previously entered that has the word “find” in it
+
+-History = shows previous commands
+	-! # can be used in tandem with history to repeat a certain command
+		-example,- “!527” will execute the 527th command entered in the terminal
+
+-Ctrl + r = bring up reverse search
+	-This will search for keywords in previous commands to find the command you are looking for
+
+-Ctrl + l = clear screen //basically enters a block of space
+
+-Cmd + k = clears scroll back, removes previous text
+
+-Ctrl + x = to close
+	-y to save command
+	-enter to keep file name
+  
+  
+-"." means current directory, ".." means parent directory
+
+
+
+## Linux/Mac Terminal Tutorial: Navigating your Filesystem
+[Watch the Video](https://www.youtube.com/watch?v=j6vKLJxAKfw)
+
+
+## Linux/Mac Terminal Tutorial: Create, Copy, Move, Rename and Delete Files and Directories
+[Watch the Video](https://www.youtube.com/watch?v=eoejHvAPDFs)
+
+
+## Mac OS X Terminal Tutorial: Time-Saving Keyboard Shortcuts
+[Watch the Video](https://www.youtube.com/watch?v=TXzrk3b9sKM)
+
